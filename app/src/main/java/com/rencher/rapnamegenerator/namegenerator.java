@@ -14,24 +14,20 @@ public class namegenerator {
 
     private static Random rand = new Random();
 
-
     public static String generateName(int totalNames) {
         String names = "";
         String newName;
         String prevName = "";
-
         for (int i = 0; i < totalNames; i++){
             newName = Beginning[rand.nextInt(Beginning.length)]+
                     Middle[rand.nextInt(Middle.length)]+
                     End[rand.nextInt(End.length)];
-
             if(!(prevName.equals(newName))) {
                 names += newName;
                 names += "\n";
             }
             prevName = newName;
         }
-
         return names;
     }
 }
