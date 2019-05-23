@@ -4,12 +4,13 @@ import java.util.Random;
 
 public class namegenerator {
     private static String[] Beginning = { "Lil " , "lil ", "Gang ", "White ", "Old ",
-            "Yung ", "XXX", "Smoke" , "Ugly ", "Nasty ", "Big ", "21", "Lean ", "Polo", "Rich"};
+            "Yung ", "XXX", "Smoke" , "Ugly ", "Nasty ", "Big ", "21", "Lean ", "Polo", "Rich",
+            "Dead "};
     private static String[] Middle = { "Air", "Tril", "Gang", "Ghost", "Sip", "Clo",
             "Red", "Mask", "Pump", "Gat", "Murder", "Lock", "Cree", "Mur", "Zed", "Slime",
             "Kid", "Boy", "Skee", "Purp", "Daddy", " Rich", "Uncle", "Drip", "Lean", "Famous"};
     private static String[] End = { "D", "baby", "trigger", "juice",
-            "tron", "med", "jay", "sticky", "mane", "mur", "weed", "candy", " Choppa"," WRLD",
+            "tron", "med", "jay", "sticky", "mane", "mur", "weed", "candy", " Choppa"," WRLD", "lo",
             "homie"," Jesus", "cloud", "keezit"};
 
     private static Random rand = new Random();
