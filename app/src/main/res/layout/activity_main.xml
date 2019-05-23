@@ -6,63 +6,80 @@
     android:layout_height="match_parent"
     android:background="#1EFFFFFF"
     android:backgroundTintMode="multiply"
-    tools:context=".MainActivity"
-    android:fitsSystemWindows="true">
-
-    <TextView
-        android:id="@+id/titleView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="casual"
-        android:text="@string/title"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@id/namesView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#ff5500"
+        android:contentDescription="@string/soundcloud_rapper"
         android:src="@drawable/rapmask"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
-    <TextView
-        android:id="@+id/namesView"
-        android:layout_width="match_parent"
-        android:layout_height="470dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="8dp"
-        android:alpha="26"
-        android:background="@color/colorAccent1"
-        android:text=""
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/button1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="26"
+        android:background="#A033658a">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namesView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:text="Testing"
+                android:textAlignment="center"
+                android:textColor="#f6ae2d"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="25dp"
         android:background="@drawable/round_button"
         android:text="@string/update"
-        app:layout_constraintTop_toBottomOf="@id/namesView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="#2f4858"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:lineHeight="38dp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
