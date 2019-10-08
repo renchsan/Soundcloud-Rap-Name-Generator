@@ -1,5 +1,6 @@
 package com.rencher.rapnamegenerator;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,12 +24,21 @@ public class MainActivity extends AppCompatActivity {
         namesView = findViewById(R.id.namesView);
         scrollView = findViewById(R.id.scrollView);
 
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.yah);
+
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 newNames = (namegenerator.generateName(18));
                 namesView.setText(newNames);
                 scrollView.scrollTo(0,0);
+
+                if(mp.isPlaying()){
+                    mp.stop();
+                    mp.start();
+                } else {
+                    mp.start();
+                }
             }
         });
     }

@@ -6,12 +6,12 @@ public class namegenerator {
     private static String[] Beginning = { "Lil " , "lil ", "Gang ", "White ", "Old ",
             "Yung ", "XXX", "Smoke" , "Ugly ", "Nasty ", "Big ", "21", "Lean ", "Polo", "Rich",
             "Dead "};
-    private static String[] Middle = { "Air", "Tril", "Gang", "Ghost", "Sip", "Clo",
-            "Red", "Mask", "Pump", "Gat", "Murder", "Lock", "Cree", "Mur", "Zed", "Slime",
+    private static String[] Middle = { "Air", "Tril", "Gang", "Ghost", "Sip", "Clo", "St ",
+            "Red", "Mask", "Pump", "Gat", "MURDER", "Lock", "Cree", "Mur", "Zed", "Slime",
             "Kid", "Boy", "Skee", "Purp", "Daddy", " Rich", "Uncle", "Drip", "Lean", "Famous"};
-    private static String[] End = { "D", "baby", "trigger", "juice",
+    private static String[] End = { "D", "baby", "trigger", "juice", "god", "walk",
             "tron", "med", "jay", "sticky", "mane", "mur", "weed", "candy", " Choppa"," WRLD", "lo",
-            "homie"," Jesus", "cloud", "keezit"};
+            "homie"," Jesus", "cloud", "keezit", "rack"};
 
     private static Random rand = new Random();
 
